@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /private/
+Allow: /public/
+Sitemap: https://lexa2005.github.io/sitemap.xml

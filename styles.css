@@ -1,0 +1,441 @@
+/* Общие стили */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Темный фон */
+  color: #ffffff; /* Светлый текст */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Стили для шапки */
+header {
+  background-color: #1f1f1f; /* Темный фон шапки */
+  color: #ffffff; /* Светлый текст */
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  animation: fadeInDown 0.5s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+/* Стили для навигации */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #1f1f1f; /* Темный фон навигации */
+  padding: 10px;
+  animation: fadeIn 0.5s ease-in-out;
+  align-items: center;
+}
+
+nav a {
+  color: #ffffff; /* Светлый текст */
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #ffc107; /* Светлый цвет при наведении */
+}
+
+nav .user-info {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+nav .username {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+nav .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav .avatar-placeholder {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили для основного контента */
+main {
+  padding: 20px;
+  flex: 1;
+}
+
+/* Стили для слайдера */
+.slider {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.slides {
+  display: flex;
+  animation: slide 20s infinite; /* Увеличиваем время анимации для четырех картинок */
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+@keyframes slide {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-100%); }
+  50% { transform: translateX(-200%); }
+  75% { transform: translateX(-300%); }
+}
+
+/* Стили для секции о компании */
+.about {
+  margin-top: 40px;
+  background-color: #1f1f1f; /* Темный фон секции */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.about h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #4CAF50; /* Зеленый цвет заголовка */
+}
+
+.about p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Стили для кнопок */
+.btn {
+  display: inline-block;
+  background-color: #4CAF50; /* Зеленый цвет кнопки */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  font-weight: 500;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #388E3C; /* Темнее зеленый цвет при наведении */
+}
+
+/* Стили для футера */
+footer {
+  background-color: #1f1f1f; /* Темный фон футера */
+  color: #ffffff; /* Светлый текст */
+  padding: 10px;
+  text-align: center;
+  margin-top: auto;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+  .slider {
+    max-width: 100%;
+  }
+}
+
+/* Стили для текстового поля отзыва */
+textarea#reviewText {
+  width: 100%; /* Ширина на всю ширину блока */
+  height: 300px; /* Увеличенная высота */
+  padding: 20px; /* Увеличенный отступ */
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Увеличенный радиус границ */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2em; /* Увеличенный размер текста */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+  background-color: #1f1f1f; /* Темный фон текстового поля */
+  color: #ffffff; /* Светлый текст */
+}
+
+/* Стили для форм */
+form {
+  background-color: #1f1f1f; /* Темный фон формы */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #4CAF50; /* Зеленый цвет текста */
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+form input[type="file"] {
+  width: 100%; /* Ширина на всю ширину блока */
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+  background-color: #1f1f1f; /* Темный фон полей ввода */
+  color: #ffffff; /* Светлый текст */
+}
+
+form button {
+  width: 100%;
+}
+
+/* Стили для поля "Сообщение" на странице контактов */
+textarea#message {
+  width: 100%; /* Ширина на всю ширину блока */
+  height: 300px; /* Увеличенная высота */
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+  background-color: #1f1f1f; /* Темный фон текстового поля */
+  color: #ffffff; /* Светлый текст */
+}
+
+/* Анимации */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Стили для галереи */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.gallery img {
+  width: 23%; /* Четыре изображения на строку с небольшим отступом */
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .gallery img {
+    width: 48%; /* Два изображения на строку на мобильных устройствах */
+  }
+}
+
+/* Стили для страницы покупок */
+.buy {
+  margin-top: 40px;
+  background-color: #1f1f1f; /* Темный фон секции */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.buy h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #4CAF50; /* Зеленый цвет заголовка */
+}
+
+.buy p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.product {
+  display: inline-block;
+  background-color: #333; /* Темный фон продукта */
+  color: #ffffff; /* Светлый текст */
+  width: 23%; /* Четыре продукта на строку */
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.product h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.product p {
+  font-size: 0.9em;
+}
+
+.product a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #4CAF50;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.product a:hover {
+  background-color: #388E3C;
+}
+
+/* Стили для аватарки */
+.avatar {
+  width: 50px; /* Задайте желаемую ширину и высоту */
+  height: 50px;
+  border-radius: 50%; /* Делает изображение круглым */
+  object-fit: cover; /* Обеспечивает правильное отображение изображения внутри круга */
+  overflow: hidden; /* Обрезает изображение по границам круга */
+  border: 2px solid #ccc; /* Опционально: добавляет рамку вокруг аватарки */
+}
+
+.avatar-placeholder {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили для секции отзывов */
+.reviews {
+  margin-top: 40px;
+  background-color: #1f1f1f; /* Темный фон секции */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.reviews h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #4CAF50; /* Зеленый цвет заголовка */
+}
+
+.review-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.review {
+  background-color: #333; /* Темный фон отзыва */
+  color: #ffffff; /* Светлый текст */
+  width: 48%; /* Два отзыва на строку */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.review:hover {
+  transform: scale(1.05);
+}
+
+.review h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #ffc107; /* Желтый цвет имени */
+}
+
+.review p {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .review {
+    width: 100%; /* Один отзыв на строку на мобильных устройствах */
+  }
+}

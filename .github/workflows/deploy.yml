@@ -1,0 +1,34 @@
+name: Deploy Next.js App
+
+on:
+  push:
+    branches:
+      - main  # Запускать при пуше в ветку main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2  # Клонирование репозитория
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'  # Укажите версию Node.js
+
+      - name: Install dependencies
+        run: npm install  # Установка зависимостей
+
+      - name: Build the project
+        run: npm run build  # Сборка проекта
+
+      - name: Export static files
+        run: npm run export  # Экспорт статических файлов в папку out
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.MY_GITHUB_TOKEN }}  # Токен для доступа к репозиторию
+          publish_dir: ./out  # Директория с собранными файлами

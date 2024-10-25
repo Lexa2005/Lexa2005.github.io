@@ -1,16 +1,4 @@
 /* Общие стили */
-body {
-    font-family: "Times New Roman", serif;
-    background-color: #000;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    overflow-x: hidden;
-    font-size: 1.1em;
-    animation: backgroundAnimation 10s infinite ease-in-out;
-}
-
 @keyframes backgroundAnimation {
     0% {
         background-color: #000;
@@ -26,18 +14,7 @@ body {
 }
 
 .background-image {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('background.jpg');
-    /* Замените на путь к вашей фоновой картинке */
-    background-size: cover;
-    background-position: center;
-    opacity: 0.5;
-    z-index: -1;
-    animation: backgroundImageAnimation 20s infinite ease-in-out;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
 }
 
 @keyframes backgroundImageAnimation {
@@ -79,14 +56,7 @@ body {
 }
 
 /* Шапка */
-header {
-    background-color: rgba(102, 102, 102, 0.8);
-    padding: 10px;
-    text-align: center;
-    border-bottom: 2px solid #fff;
-    border-radius: 10px 10px 0 0;
-    animation: headerAnimation 2s ease-in-out;
-}
+
 
 @keyframes headerAnimation {
     0% {
@@ -100,28 +70,7 @@ header {
     }
 }
 
-header h1 {
-    margin: 0;
-    font-size: 3.5em;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    color: #ff69b4;
-    text-shadow: 0 0 10px #fff;
-}
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav li {
-    display: inline-block;
-    margin: 0 10px;
-    animation: navAnimation 2s ease-in-out;
-}
 
 @keyframes navAnimation {
     0% {

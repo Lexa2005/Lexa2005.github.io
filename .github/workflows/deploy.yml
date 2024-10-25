@@ -22,10 +22,7 @@ jobs:
         run: npm install  # Установка зависимостей
 
       - name: Build the project
-        run: npm run build  # Сборка проекта
-
-      - name: Export static files
-        run: npm run export  # Экспорт статических файлов в папку out
+        run: npm run build  # Сборка проекта (включает экспорт)
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

@@ -95,7 +95,7 @@ function indefiniteWrite() {
         "Wow!",
         "This sentence is a lie",
         "Pie is a lie",
-        "Minsk GMT+3."
+        "Kaliningrad GMT+2."
     ];
     var num = getRandomInt(strs.length);
     console.log("writing: " + strs[num]);

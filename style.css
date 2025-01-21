@@ -1,0 +1,85 @@
+html, body {
+    height: 150%;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(-45deg, #4d6d6e, #72ccb4, #6dafb5);
+    background-size: 400% 400%;
+    animation: gradient 4s ease infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0 50%; }
+}
+
+.seller {
+    font-family: monospace;
+    color: #444;
+    cursor: text;
+}
+
+.holder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.textiboi {
+	text-align: center;
+	color: #444;
+	font-family: monospace;
+}
+
+.textiboi:hover {
+	color: white;
+}
+
+.header {
+	text-align: center;
+	color: #444;
+	font-family: monospace;
+}
+
+.header a {
+	text-decoration: none;
+}
+
+.hoverr:hover a {
+	color: white;
+}
+
+.header:hover {
+	color: white;
+}
+
+.container:hover .seller,
+.container:hover a,
+.container:hover .icon,
+.header:hover a {
+	color: white;
+}
+
+.icon i {
+	font-size: 80px;
+}
+
+.container {
+	text-align: center;
+	margin: 5px 20px;
+	float: left;
+}
+
+a {
+	color: #444;
+}

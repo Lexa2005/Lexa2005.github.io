@@ -37,8 +37,8 @@ function handleAnimations() {
 
 function addStuff() {
     document.getElementById("main").innerHTML =
-        `<h1 name="top" id="status_text" class="header animated"><a href="https://rb.gy/l6u5za">Lexa2005</a></h1>
-        <p name="bottom" id="text2" class="textiboi animated">Ordinary guy</p>`;
+    `<h1 name="top" id="status_text" class="header animated"><a href="https://rb.gy/l6u5za">Lexa2005</a></h1>
+    <p name="bottom" id="text2" class="textiboi animated">Ordinary guy</p>`;
     handleAnimations();
 }
 
@@ -77,11 +77,12 @@ function animationOver() {
         console.log("animations over");
         var doc = document.getElementById("main");
         doc.innerHTML +=
-            `<div class="textiboi"><a id="typElement"></a></div>
-            <div class="textiboi">
-            <a class="textiboi animated fadeIn" href="https://github.com/Lexa2005">[github]</a>
-            <a class="textiboi animated fadeIn" href="https://dashboard.snfsx.xyz">[uptime]</a>
-            <a class="textiboi animated fadeIn" href="gamelife.html">[Game life]</a>`;
+        `<div class="textiboi"><a id="typElement"></a></div>
+        <div class="textiboi">
+        <a class="textiboi animated fadeIn" href="https://github.com/Lexa2005">[github]</a>
+        <a class="textiboi animated fadeIn" href="https://dashboard.snfsx.xyz">[uptime]</a>
+        <a class="textiboi animated fadeIn" href="./game/2/gamelife.html">[Game life]</a>
+        <a class="textiboi animated fadeIn" href="./game/1/snake.html">[Snake]</a>`;
         console.log("running typewrite");
         indefiniteWrite();
     }, 550);

@@ -1,0 +1,165 @@
+/* Общие стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Контейнер для содержимого */
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Заголовок */
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+    font-style: italic;
+}
+
+/* Дисклеймер */
+.disclaimer {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #ccc;
+    font-style: italic;
+    text-align: left;
+}
+
+.disclaimer strong {
+    color: #fff;
+}
+
+/* Кнопка запуска теста */
+button {
+    padding: 20px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-bottom: 40px;
+    font-style: italic;
+    width: 100%; /* Кнопка на всю ширину на мобильных устройствах */
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #000;
+    color: #fff;
+    outline: 2px solid #fff;
+}
+
+/* Блок с результатами */
+#results {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* Стиль для каждого результата теста */
+.benchmark-result {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #111;
+    border-radius: 5px;
+    border-left: 4px solid #fff;
+    font-style: italic;
+}
+
+/* Стиль для общего результата */
+.total-score {
+    margin-top: 40px;
+    font-size: 36px;
+    color: #fff;
+    font-weight: bold;
+    padding: 20px;
+    background-color: #111;
+    border-radius: 5px;
+    border-left: 4px solid #fff;
+    font-style: italic;
+}
+
+/* Сообщение перед запуском теста */
+#results p {
+    color: #ccc;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px; /* Уменьшаем размер заголовка */
+    }
+
+    .disclaimer {
+        font-size: 12px; /* Уменьшаем размер текста дисклеймера */
+    }
+
+    button {
+        font-size: 18px; /* Уменьшаем размер текста кнопки */
+        padding: 15px 20px; /* Уменьшаем отступы кнопки */
+    }
+
+    #results {
+        font-size: 18px; /* Уменьшаем размер текста результатов */
+    }
+
+    .benchmark-result {
+        font-size: 16px; /* Уменьшаем размер текста каждого результата */
+    }
+
+    .total-score {
+        font-size: 24px; /* Уменьшаем размер текста общего результата */
+        padding: 15px; /* Уменьшаем отступы общего результата */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px; /* Еще больше уменьшаем размер заголовка */
+    }
+
+    .disclaimer {
+        font-size: 11px; /* Еще больше уменьшаем размер текста дисклеймера */
+    }
+
+    button {
+        font-size: 16px; /* Еще больше уменьшаем размер текста кнопки */
+        padding: 10px 15px; /* Еще больше уменьшаем отступы кнопки */
+    }
+
+    #results {
+        font-size: 16px; /* Еще больше уменьшаем размер текста результатов */
+    }
+
+    .benchmark-result {
+        font-size: 14px; /* Еще больше уменьшаем размер текста каждого результата */
+    }
+
+    .total-score {
+        font-size: 20px; /* Еще больше уменьшаем размер текста общего результата */
+        padding: 10px; /* Еще больше уменьшаем отступы общего результата */
+    }
+}

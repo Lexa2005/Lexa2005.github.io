@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бенчмарк браузеров</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Бенчмарк браузеров</h1>
+        <div class="disclaimer">
+            <p><strong>Дисклеймер:</strong> Результаты теста носят ознакомительный характер и могут варьироваться в зависимости от нагрузки на систему, версии браузера, аппаратного обеспечения и других факторов.</p>
+        </div>
+        <button id="runBenchmark">Запустить тест</button>
+        <div id="results">
+            <p>Нажмите кнопку, чтобы начать тестирование.</p>
+        </div>
+        <canvas id="canvasTest" width="500" height="500" style="display: none;"></canvas>
+    </div>
+    <script src="benchmark.js"></script>
+</body>
+</html>

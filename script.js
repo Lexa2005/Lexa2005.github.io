@@ -81,7 +81,8 @@ function animationOver() {
         <div class="textiboi">
         <a class="textiboi animated fadeIn" href="https://github.com/Lexa2005">[github]</a>
         <a class="textiboi animated fadeIn" href="./game/2/gamelife.html">[Game life]</a>
-        <a class="textiboi animated fadeIn" href="./game/1/snake.html">[Snake]</a>`;
+        <a class="textiboi animated fadeIn" href="./game/1/snake.html">[Snake]</a>
+        <a class="textiboi animated fadeIn" href="./benchmark/index.html">[Benchmark]</a>`;
         console.log("running typewrite");
         indefiniteWrite();
     }, 550);

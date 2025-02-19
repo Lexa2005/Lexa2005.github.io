@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Вращающийся Куб с Настройками</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="scene">
+        <div class="cube">
+            <div class="face front">1</div>
+            <div class="face back">2</div>
+            <div class="face right">3</div>
+            <div class="face left">4</div>
+            <div class="face top">5</div>
+            <div class="face bottom">6</div>
+        </div>
+    </div>
+
+    <!-- Панель управления -->
+    <div class="controls">
+        <h2>Настройки Демки</h2>
+        <label for="colorPicker">Цвет куба:</label>
+        <input type="color" id="colorPicker" value="#ff0000">
+
+        <label for="shadowToggle">Тени:</label>
+        <input type="checkbox" id="shadowToggle" checked>
+
+        <label for="rotationSpeed">Скорость вращения:</label>
+        <input type="range" id="rotationSpeed" min="0" max="10" value="5">
+
+        <label for="opacity">Прозрачность:</label>
+        <input type="range" id="opacity" min="0" max="100" value="100">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
